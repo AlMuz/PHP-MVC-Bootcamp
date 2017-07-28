@@ -1,20 +1,21 @@
 {
-    "name": "php/nigga",
-    "type": "project",
-    "require-dev": {
-        "symfony/var-dumper": "^3.3"
-    },
-    "authors": [
-        {
-            "name": "Almuz",
-            "email": "almuz@inbox.lv"
-        }
-    ],
-    "require": {
-        "symfony/routing": "^3.3"
-    },
-    "autoload": {
-        "psr-4": {"Myproject\\": "app/"}
+  "name": "php/nigga",
+  "type": "project",
+  "require-dev": {
+    "symfony/var-dumper": "^3.3"
+  },
+  "authors": [
+    {
+      "name": "Almuz",
+      "email": "almuz@inbox.lv"
     }
-
+  ],
+  "require": {
+    "symfony/routing": "^3.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Myproject\\": "app/"
+    }
+  }
 }

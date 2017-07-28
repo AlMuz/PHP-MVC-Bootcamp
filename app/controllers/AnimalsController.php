@@ -1,4 +1,5 @@
 <?php
+
 namespace Myproject\controllers;
 
 class AnimalsController extends AbstractController
@@ -10,7 +11,7 @@ class AnimalsController extends AbstractController
     protected $smallAnimals;
     protected $animals;
 
-    public function animalsAction()
+    public function animalsAction() :string
     {
         $color = $_GET['color'] ?? null;
 
@@ -25,7 +26,7 @@ class AnimalsController extends AbstractController
         return $this->render($template, $templateVariables);
     }
 
-    public function smallAnimalsAction()
+    public function smallAnimalsAction() :string
     {
         /** @var \SmallAnimals $animals */
         $animals = $this->container->get('model.animals.small');

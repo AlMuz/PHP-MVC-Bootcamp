@@ -1,4 +1,5 @@
 <?php
+
 namespace Myproject\models;
 class Cars
 {
@@ -27,7 +28,7 @@ class Cars
      *
      * @return array
      */
-    public function getRandomCars() : array
+    public function getRandomCars(): array
     {
         $this->shuffle();
         return $this->arrayOfCars;

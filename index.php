@@ -10,6 +10,7 @@ use Myproject\models\Fish;
 use Myproject\models\Cars;
 use Myproject\models\SmallAnimals;
 use Myproject\Container;
+
 class Database
 {
 
@@ -24,7 +25,7 @@ if (array_key_exists('page', $_GET)) {
         'model.animals.small' => new SmallAnimals(),
         'model.cars' => new Cars(),
         'model.fish' => new Fish(),
-        'resource.views'=> __DIR__.'/app/views/'
+        'resource.views' => __DIR__ . '/app/views/'
     ];
 
     $container = new Container($dependencies);
@@ -37,7 +38,7 @@ if (array_key_exists('page', $_GET)) {
         'animals' => [$animals, 'animalsAction'],
         'small-animals' => [$animals, 'smallAnimalsAction'],
         'cars' => [$cars, 'carsAction'],
-        'fish' => [$fish,'fishAction'],
+        'fish' => [$fish, 'fishAction'],
 
     ];
 
@@ -49,4 +50,4 @@ if (array_key_exists('page', $_GET)) {
     }
 }
 
-include __DIR__.'/app/view.php';
+include __DIR__ . '/app/view.php';

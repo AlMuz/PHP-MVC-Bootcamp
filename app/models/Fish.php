@@ -1,4 +1,5 @@
 <?php
+
 namespace Myproject\models;
 class Fish
 {
@@ -26,7 +27,7 @@ class Fish
     }
 
 
-    public function getFishList() : array
+    public function getFishList(): array
     {
         return $this->listOfFish;
     }

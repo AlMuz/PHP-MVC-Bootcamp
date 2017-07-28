@@ -1,4 +1,5 @@
 <?php
+
 namespace Myproject\models;
 
 
@@ -10,7 +11,7 @@ class Animals implements AnimalModelInterface
      * @return array
      */
 
-    public function getListOfAnimals() : array
+    public function getListOfAnimals(): array
     {
         return [
             'rabbit',

@@ -1,4 +1,5 @@
 <?php
+
 namespace Myproject;
 interface ContainerInterface
 {
